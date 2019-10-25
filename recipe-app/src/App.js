@@ -42,7 +42,7 @@ function App() {
           alt="pattern"
         ></img>
         <div className="overlay-div">
-          <span className="header-header">Recipe Search</span>
+          <span className="header-header"> This is the Recipe Search</span>
           <span className="header-text">Find recipes you love.</span>
           <div className="centered-search">
             <form className="search-form" onSubmit={searchSubmit}>

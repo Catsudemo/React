@@ -1,5 +1,13 @@
 import React from 'react';
 const Recipe = ({ title, image, ingredients, url, source, labels }) => {
+  let veggie = '';
+
+  const updateVeggie = labels => {
+    veggie = labels.filter(label => label === 'Vegetarian');
+  };
+
+  updateVeggie(labels);
+
   return (
     <div className="recipe">
       <div className="recipe-item-wrapper">
@@ -16,6 +24,7 @@ const Recipe = ({ title, image, ingredients, url, source, labels }) => {
                 <li>{ingredient.text}</li>
               ))}
             </ol>
+            <div className="badge">{veggie}</div>
             <a href={url} className="recipeLink" target="_blank" rel="noopener noreferrer">
               Go to Recipe
             </a>
