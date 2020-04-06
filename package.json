@@ -1,5 +1,5 @@
 {
-  "name": "React",
+  "name": "React-app",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/HackYourFuture/React.git",
@@ -10,6 +10,9 @@
     "test": "npm run lint"
   },
   "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-react-app": "^2.1.0",
@@ -17,7 +20,8 @@
     "eslint-plugin-flowtype": "^2.46.3",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^5.1.0",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "redux-starter-kit": "^1.0.0"
   },
   "eslintIgnore": [
     "node_modules"
